@@ -24,16 +24,18 @@ session_start();
                 </div>
 
                 <div class="col-md-6">
-                <ul class="auth-link-div d-flex">
+               
                     <?php
                     if(isset($_SESSION['id'])){
-                        echo "<li>" . $_SESSION['name'] ."</li>";
+                        echo "<p>" . $_SESSION['name'] ."</p>";
                     }else{
-                        echo '<li><a href="signup.php">Register</a></li>
-                        <li class="bodr-cls pr-0"><a href="login.php">Log-In</a></li>';
+                        echo ' <ul class="auth-link-div d-flex">
+                        <li><a href="signup.php">Register</a></li>
+                        <li class="bodr-cls pr-0"><a href="login.php">Log-In</a></li>
+                        </ul>';
                     }
                     ?>
-                    </ul>
+                    
                 </div>
 
             </div>

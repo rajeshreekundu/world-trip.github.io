@@ -1,6 +1,5 @@
 <?php 
-    session_start();
-    // include('db/conn.php');
+    // session_start();
 include('assets/function.php');
 
 ?>
@@ -262,7 +261,7 @@ include('assets/function.php');
 
             </div>
             <div class="btn-div">
-                <button type="submit">View More</button>
+                <button type="submit" class='butn'>View More</button>
             </div>
 
         </div>
@@ -380,7 +379,7 @@ include('assets/function.php');
                         Still round match we to.</p>
                     <form class='subscbe-frm'>
                         <input type="email" placeholder="E-mail / Mobile No">
-                        <button type="submit">Sign Up</button>
+                        <button type="submit" class='butn'>Subscribe</button>
                     </form>
                 </div>
 

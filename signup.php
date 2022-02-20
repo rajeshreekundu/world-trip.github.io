@@ -48,7 +48,7 @@
             <div class='input-area'>
                 <input type='password' name='pass' placeholder='Password' />
             </div>
-            <button class='butn-cls' name="submit">Signup</button>
+            <button class='butn form-btn' name="submit">Signup</button>
 
             <div class='frgot-pswrd-div'>
                 <a href='login.php'>Already have an account? <span>Login</span></a>

@@ -54,7 +54,7 @@
             <div class='input-area'>
                 <input type='password' name='pass' placeholder='Password' />
             </div>
-            <button name='submit' class='butn-cls'>Submit</button>
+            <button name='submit' class='butn form-btn'>Submit</button>
 
             <div class='frgot-pswrd-div'>
                 <a href='signup.php'>Don't have an account? <span>Sign-up</span></a>

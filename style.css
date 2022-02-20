@@ -8,6 +8,23 @@ html, body{
 
 }
 a, a:hover{text-decoration: none}
+.butn{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    background: linear-gradient(to right, #4785d1, #7c54b5);
+    transition: ease-in 1s;
+    opacity: 1;
+    cursor: pointer;
+}
+.butn:focus{
+    outline: none;
+}
+.butn:hover{
+    opacity: 0.8;
+}
 
 .form-cls {
     background: #efefef;
@@ -25,16 +42,10 @@ a, a:hover{text-decoration: none}
     margin: 0 0 30px;
     letter-spacing: 1px;
 }
-.butn-cls {
-    padding: 10px;
+.form-btn {
+    padding: 8px;
     width: 100%;
-    border-radius: 2px;
-    border: none;
-    font-size: 15px;
     margin-top: 12px;
-    background: linear-gradient(to right, #4785d1, #7c54b5);
-    color: #fff;
-    font-weight: 500;
 }
 .input-area label {
     font-size: 14px;
@@ -298,10 +309,7 @@ a, a:hover{text-decoration: none}
 }
 .btn-div button {
     padding: 8px 25px;
-    border: none;
     border-radius: 32px;
-    background: linear-gradient(to right, #4785d1, #7c54b5);
-    color: #fff;
     margin-top: 15px;
 }
 .abou-sec {
@@ -382,16 +390,16 @@ a, a:hover{text-decoration: none}
     display: flex;
 }
 li.nn {
-    width: 50px;
-    height: 50px;
-    background: #0149ad;
+    width: 55px;
+    height: 55px;
+    background: #1b68d1;
     color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    min-width: 50px;
+    min-width: 55px;
     margin-right: 15px;
 }
 li.nn0 h3 {
@@ -413,6 +421,7 @@ li.nn0 h3 {
 }
 .subscbe-frm {
     position: relative;
+    width: 85%;
 }
 .subscbe-frm input {
     padding: 8px 10px;
@@ -425,10 +434,7 @@ li.nn0 h3 {
     position: absolute;
     right: 0;
     padding: 8px 16px;
-    background: linear-gradient(to right, #4785d1, #7c54b5);
-    color: #fff;
     border-radius: 0 3px 3px 0;
-    font-size: 15px;
     border: 1px solid #5b72c6;
 }
 .footer-cls{
@@ -494,8 +500,9 @@ li.nn0 h3 {
     border-radius: 50%;
     color: #fff;
 }
-.social-network a:hover i{
+.social-network a:hover {
     color: #1f79f7;
+    border-color: #1f79f7;
 }
 .footer ul.social-network {
     list-style: none;
@@ -542,10 +549,10 @@ li.nn0 h3 {
 .copyright-cls {
     margin: 0;
     text-align: center;
-    color: #939393;
+    color: #686868;
     font-size: 15px;
     padding: 15px 0;
-    border-top: 1px solid #6a6a6a;
+    border-top: 1px solid #303030;
     position: absolute;
     bottom: 0;
     width: 100%;
