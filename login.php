@@ -13,7 +13,7 @@
 
         if(mysqli_num_rows($result)==1){
             $arr = array();
-            $arr = mysqli_fetch_assoc($res);
+            $arr = mysqli_fetch_assoc($result);
 
             $_SESSION['id']=$arr['uid'];
             $_SESSION['email']=$arr['email'];
