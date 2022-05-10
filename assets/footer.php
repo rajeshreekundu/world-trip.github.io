@@ -10,7 +10,7 @@
 <footer class='footer-cls'>
         <div class='container'>
             <div class='row'>
-                <div class='col-md-4 pr-4'>
+                <div class='col-md-4 pr-lg-4'>
                     <a class="navbar-brand footer-logo" href="#">
                         WorldTrip
                     </a>
@@ -29,7 +29,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class='col-md-4 pl-5'>
+                <div class='col-md-4 pl-lg-5'>
                     <h4 class='footr-subheadng'>Quick Links</h4>
                     <ul class='footer-links'>
                         <li><a href='#'> Term & Condition</a></li>
@@ -44,7 +44,7 @@
                 <div class='footer-contct'>
                     <p>Juno, Inc. Moon Street Light Avenue, 
                         14/05 Jupiter, JP 80630</p>
-                        <p><i class="fa fa-phone"></i> + 91-3456-789-210</p>
+                        <p><a href="tel: +91-3456-789-210"><i class="fa fa-phone"></i> +91-3456-789-210</a></p>
                         <a href="mailto:info@worldtrip.com"><i class="fa fa-envelope-o"></i>info@worldtrip.com</a>
                 </div>
                 </div>

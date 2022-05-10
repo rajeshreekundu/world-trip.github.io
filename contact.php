@@ -29,7 +29,7 @@ include('assets/function.php');
                     <h2 class='sec-heading text-md-left mb-4'>Have a Comment? Drop us a message</h2>
                     <p class='contct-lefttxt'>We always welcome or feedback from our friends and customers.</p>
                 </div>
-                <div class='col-md-7 pl-5'>
+                <div class='col-md-7 pl-lg-5'>
                     <form>
                         <div class='form-group'>
                             <label for="">Name *</label>
@@ -43,7 +43,7 @@ include('assets/function.php');
                             <label for="">Description *</label>
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn contct-page-butn">Submit</button>
+                        <button type="submit" class="btn butn contct-page-butn">Submit</button>
                     </form>
                 </div>
             </div>

@@ -14,16 +14,16 @@ session_start();
 <body>
 <div class="top-navbar">
         <div class="container">
-            <div class="row p-2">
-                <div class="col-md-6">
-                    <ul class="cntct-info d-flex">
-                        <li class='pr-3'><i class="fa fa-phone"></i>Phone: +125058798</li>
+            <div class="row pt-2 pb-2">
+                <div class="col-md-6 col-lg-7">
+                    <ul class="cntct-info d-lg-flex">
+                        <li class='pr-3 pl-0'><a href="tel: +91-3456-789-210"><i class="fa fa-phone"></i>Phone: +91-3456-789-210</a></li>
                         <li><a href="mailto:info@worldtrip.com"><i class='fa fa-envelope-o'></i>
                                 Email: info@worldtrip.com</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-lg-5">
                
                     <?php
                     if(isset($_SESSION['id'])){
@@ -41,17 +41,17 @@ session_start();
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white pl-5 pr-5">
-        <a class="navbar-brand navbr-logo" href="#">
+    <nav class="navbar navbar-expand-lg bg-white pl-lg-5 pr-lg-5">
+        <a class="navbar-brand navbr-logo" href="index.php">
             WorldTrip
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto pl-5 nav-menu-area">
+            <ul class="navbar-nav mr-auto pl-lg-5 nav-menu-area">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>

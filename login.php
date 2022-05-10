@@ -46,15 +46,17 @@
 <body>
     <div class='login-form'>
         <form class='form-cls' method='post' action='login.php'>
-            <h2 class='form-heading'>Login</h2>
-
+        <div class='frm-header-cls'>  
+        <h2 class='form-heading'>Login</h2>
+            <p>Welcome to WorldTrip</p>
+            </div>  
             <div class='input-area'>
                 <input type='text' name='email' placeholder='Email' />
             </div>
             <div class='input-area'>
                 <input type='password' name='pass' placeholder='Password' />
             </div>
-            <button name='submit' class='butn form-btn'>Submit</button>
+            <button name='submit' class='butn form-btn'>Log In</button>
 
             <div class='frgot-pswrd-div'>
                 <a href='signup.php'>Don't have an account? <span>Sign-up</span></a>

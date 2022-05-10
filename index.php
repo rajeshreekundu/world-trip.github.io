@@ -135,7 +135,7 @@ include('assets/function.php');
                         <div class="txt-area-sec2">
                             <h3>Kailash</h3>
                             <p>Resolution devonshire pianoforte assistance an he particular middletons...</p>
-                            <div class='d-flex align-content-center justify-content-between'>
+                            <div class='d-lg-flex align-content-center justify-content-between'>
                                 <ul class="rating-area">
                                     <li><i class="fa fa-star"></i></li>
                                     <li><i class="fa fa-star"></i></li>
@@ -157,7 +157,7 @@ include('assets/function.php');
                         <div class="txt-area-sec2">
                             <h3>Chittor Fort</h3>
                             <p>Resolution devonshire pianoforte assistance an he particular middletons...</p>
-                            <div class='d-flex align-content-center justify-content-between'>
+                            <div class='d-lg-flex align-content-center justify-content-between'>
                                 <ul class="rating-area">
                                     <li><i class="fa fa-star"></i></li>
                                     <li><i class="fa fa-star"></i></li>
@@ -179,7 +179,7 @@ include('assets/function.php');
                             <h3>Goa</h3>
                             <p class='details'>Resolution devonshire pianoforte assistance an he particular
                                 middletons...</p>
-                            <div class='d-flex align-content-center justify-content-between'>
+                            <div class='d-lg-flex align-content-center justify-content-between'>
                                 <ul class="rating-area">
                                     <li><i class="fa fa-star"></i></li>
                                     <li><i class="fa fa-star"></i></li>
@@ -201,7 +201,7 @@ include('assets/function.php');
                         <div class="txt-area-sec2">
                             <h3>Sri Lanka</h3>
                             <p>Resolution devonshire pianoforte assistance an he particular middletons...</p>
-                            <div class='d-flex align-content-center justify-content-between'>
+                            <div class='d-lg-flex align-content-center justify-content-between'>
                                 <ul class="rating-area">
                                     <li><i class="fa fa-star"></i></li>
                                     <li><i class="fa fa-star"></i></li>
@@ -222,7 +222,7 @@ include('assets/function.php');
                         <div class="txt-area-sec2">
                             <h3>Rajasthan</h3>
                             <p>Resolution devonshire pianoforte assistance an he particular middletons...</p>
-                            <div class='d-flex align-content-center justify-content-between'>
+                            <div class='d-lg-flex align-content-center justify-content-between'>
                                 <ul class="rating-area">
                                     <li><i class="fa fa-star"></i></li>
                                     <li><i class="fa fa-star"></i></li>
@@ -244,7 +244,7 @@ include('assets/function.php');
                         <div class="txt-area-sec2">
                             <h3>Italy</h3>
                             <p>Resolution devonshire pianoforte assistance an he particular middletons...</p>
-                            <div class='d-flex align-content-center justify-content-between'>
+                            <div class='d-lg-flex align-content-center justify-content-between'>
                                 <ul class="rating-area">
                                     <li><i class="fa fa-star"></i></li>
                                     <li><i class="fa fa-star"></i></li>
@@ -377,8 +377,8 @@ include('assets/function.php');
                     </ul>
                     <p class='subscrb-txt'>Affronting everything discretion men now own did.
                         Still round match we to.</p>
-                    <form class='subscbe-frm'>
-                        <input type="email" placeholder="E-mail / Mobile No">
+                    <form class='form-inline subscbe-frm'>
+                        <input class='form-control' type="email" placeholder="E-mail / Mobile No">
                         <button type="submit" class='butn'>Subscribe</button>
                     </form>
                 </div>

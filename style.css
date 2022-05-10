@@ -5,7 +5,11 @@ html, body{
 *{
    font-family: 'Ubuntu', sans-serif;
    font-family: 'Montserrat', sans-serif;
-
+}
+.form-inline .form-control:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 1px solid #b4b4b4;
 }
 a, a:hover{text-decoration: none}
 .butn{
@@ -14,17 +18,24 @@ a, a:hover{text-decoration: none}
     font-weight: 500;
     border-radius: 3px;
     border: none;
-    /* background: linear-gradient(to right, #4785d1, #7c54b5); */
     background: linear-gradient(to right, #9659b6, #7c54b5);
     transition: ease-in 0.7s;
-    opacity: 1;
     cursor: pointer;
+
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 .butn:focus{
     outline: none;
 }
 .butn:hover{
-    opacity: 0.8;
+     opacity: 0.9;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .form-cls {
@@ -34,14 +45,23 @@ a, a:hover{text-decoration: none}
     border-radius: 5px;
     box-shadow: 0 0 20px -10px #000;
 }
+.frm-header-cls {
+    margin-bottom: 30px;
+    text-align: center;
+}
 .form-heading {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
     font-size: 25px;
-    text-align: center;
     color: #8957b6;
-    margin: 0 0 30px;
+    margin: 0 0 12px;
     letter-spacing: 1px;
+}
+.frm-header-cls p {
+    margin: 0;
+    font-size: 18px;
+    color: #6e7671;
+    font-weight: 500;
 }
 .form-btn {
     padding: 8px;
@@ -155,8 +175,8 @@ a, a:hover{text-decoration: none}
 .cntct-info .fa {
     padding-right: 4px;
 }
-.carousel-item {
-    height: 565px;
+.banner-area .carousel-item{
+    height: auto;
     overflow: hidden;
     object-fit: cover;
 }
@@ -164,7 +184,7 @@ a, a:hover{text-decoration: none}
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     padding: 0;
-    background: -webkit-linear-gradient(#4785d1, #7c54b5);
+    background: -webkit-linear-gradient(#4785d1, #6f438b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
@@ -193,14 +213,14 @@ a, a:hover{text-decoration: none}
     background: transparent;
     color: #5677c9;
 }
-.nav-menu-area a.nav-link {
+.nav-menu-area .nav-link {
     padding: 0 14px !important;
     color: #7e7e7e;
     font-weight: 500;
     font-size: 15px;
     transition: 1s ease-out;
 }
-.nav-menu-area a.nav-link:hover{
+.nav-menu-area .nav-link:hover{
     background: -webkit-linear-gradient(#c33764, #7b55b6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -211,7 +231,6 @@ a, a:hover{text-decoration: none}
 .sec-heading {
     font-family: 'Ubuntu', sans-serif;
     color: #0068e1;
-    /* background: -webkit-linear-gradient(#4785d1, #7c54b5); */
     background: -webkit-linear-gradient(#a669dc, #6f438b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -345,9 +364,12 @@ a, a:hover{text-decoration: none}
 }
 .sub-heading {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     color: #045bd5;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    background: -webkit-linear-gradient(#a669dc, #6f438b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .about-detls {
     font-size: 16px;
@@ -417,7 +439,8 @@ a, a:hover{text-decoration: none}
 li.nn {
     width: 55px;
     height: 55px;
-    background: #1b68d1;
+    /* background: #1b68d1; */
+    background: linear-gradient(to right, #9659b6, #7c54b5);
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -448,8 +471,8 @@ li.nn0 h3 {
     position: relative;
     width: 85%;
 }
-.subscbe-frm input {
-    padding: 8px 10px;
+.subscbe-frm .form-control {
+    padding: 8px 10px 8px 10px;
     width: 100%;
     border-radius: 3px;
     border: 1px solid #a5a5a5;
@@ -570,7 +593,8 @@ li.nn0 h3 {
     display: block;
 }
 .footer-links li a:hover{
-    color: #1f79f7;
+    /* color: #1f79f7; */
+    color: #ab69ce;
 }
 .copyright-cls {
     margin: 0;
@@ -655,11 +679,10 @@ li.nn0 h3 {
     line-height:34px;
 }
 .contct-page-butn {
-    background: linear-gradient(to right, #4785d1, #7c54b5);
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 3px;
-    border: none;
+    /* background: linear-gradient(to right, #4785d1, #7c54b5);
+    color: #fff; */
+    padding: 8px 25px;
+    border-radius: 32px;
 }
 .package-sec {
     padding: 80px 150px;
@@ -697,4 +720,97 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 55.75em){
+    
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .form-cls{
+        width: 100%;
+    }
+    .cntct-info li, .cntct-info li a{
+        padding: 0;
+    }
+    .nav-menu-area .nav-link {
+        padding: 0 6px !important;
+        margin: 10px 0;
+    }
+    .nav-searchbar{
+        width: 100%;
+        padding: 10px 0;
+    }
+    /* #navbarSupportedContent {
+        position: fixed;
+        height: 100%;
+        background: #fff;
+        top: 0;
+        z-index: 9;
+        left: 0;
+        padding: 15px;
+        box-shadow: 3px 0px 20px -2px #0003;
+        width: 70%;
+    } */ 
+    .catgry-box-wrap {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .about-inner {
+        padding: 80px 20px 40px;
+    }
+    .contctpage-sec {
+        padding: 80px 20px;
+    }
+    .contctpage-sec .sec-heading{
+        text-align: left;
+    }
+    .subscbe-frm{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .nav-menu-area .nav-link {
+        padding: 0 6px !important;
+        margin: 10px 0;
+    }
+    .nav-searchbar{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .catgry-box-wrap {
+        grid-template-columns: repeat(auto-fill, 18.35%);
+    }
+    .content{
+        height: auto;
+    }
+    .content-details h3{
+        font-size: 18px;
+    }
+    .content-details p {
+        font-size: 12px;
+    }
+    .about-inner {
+        padding: 80px 0 0 20px;
+    }
+    li.nn0 h3 {
+        font-size: 17px;
+    }
+    .subscbe-frm {
+        width: 100%;
+    }
+    .contctpage-sec {
+        padding: 80px 20px;
+    }
+    .subscbe-frm{
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (device-width: 1024px) {
+    .nav-searchbar {
+        width: 35%;
+    }
 }

@@ -34,8 +34,11 @@
 <body>
     <div class='login-form signup-form'>
         <form class='form-cls' id='formId' action="signup.php" method='post' >
-            <h2 class='form-heading'>Signup</h2>
-
+            <!-- <h2 class='form-heading'>Signup</h2> -->
+            <div class='frm-header-cls'>  
+        <h2 class='form-heading'>Signup</h2>
+            <p>Welcome to WorldTrip</p>
+            </div>  
             <div class='input-area '>
                 <input type='text' name='name' placeholder='Name' id='usrNme'/>
                 <small>Error sms</small>
