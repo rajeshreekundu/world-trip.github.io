@@ -11,7 +11,7 @@ include('assets/function.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>World Trip</title>
     <link href='style.css' rel='stylesheet' type='text/css' />
 </head>
 
@@ -456,5 +456,4 @@ include('assets/function.php');
     <?php include('assets/footer.php')?>
 
 </body>
-
 </html>

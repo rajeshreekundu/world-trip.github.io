@@ -66,7 +66,7 @@ a, a:hover{text-decoration: none}
 .form-btn {
     padding: 8px;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 20px;
 }
 .input-area label {
     font-size: 14px;
@@ -77,10 +77,11 @@ a, a:hover{text-decoration: none}
 }
 .input-area {
     position: relative;
+    margin-bottom: 20px;
 }
 .input-area input {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding: 10px 5px;
     border-radius: 0;
     border: none;
@@ -90,13 +91,23 @@ a, a:hover{text-decoration: none}
     font-weight: 500;
     font-size: 15px;
 }
-.input-area small {
+.error-sms {
     position: absolute;
     left: 5px;
-    bottom: 0;
+    top: 100%;
     color: #ff4d4f;
-    font-weight: 500;
-    visibility: hidden;
+    font-weight: 600;
+    /* visibility: hidden; */
+    font-size: 13px;
+}
+.error-sms::before {
+    content: '\f06a';
+    font-family: 'FontAwesome';
+    opacity: 0;
+    margin-right: 5px;
+}
+.error-field .error-sms::before{
+    opacity: 1;
 }
 .input-area.error small {
     visibility: visible;
@@ -112,7 +123,8 @@ a, a:hover{text-decoration: none}
     border-color: #52c41a;
 }
 .login-form {
-    /* background: linear-gradient(to right, #4785d1, #7c54b5); */
+    /* background: linear-gradient(to right, #4785d1, #7c54b5); 
+    color: #4982cf; */
     background: linear-gradient(to right, #9659b6, #7c54b5);
     height: 100%;
     display: flex;
@@ -128,7 +140,6 @@ a, a:hover{text-decoration: none}
     font-size: 15px;
 }
 .frgot-pswrd-div span {
-    /* color: #4982cf; */
     color: #70438c;
     font-weight: 500;
 }
@@ -386,7 +397,6 @@ a, a:hover{text-decoration: none}
 }
 .feature-div .fa {
     font-size: 40px;
-    /* background: -webkit-linear-gradient(#4785d1, #7c54b5); */
     background: -webkit-linear-gradient(#9659b6, #7c54b5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -439,7 +449,6 @@ a, a:hover{text-decoration: none}
 li.nn {
     width: 55px;
     height: 55px;
-    /* background: #1b68d1; */
     background: linear-gradient(to right, #9659b6, #7c54b5);
     color: #fff;
     border-radius: 50%;
@@ -593,7 +602,6 @@ li.nn0 h3 {
     display: block;
 }
 .footer-links li a:hover{
-    /* color: #1f79f7; */
     color: #ab69ce;
 }
 .copyright-cls {
@@ -679,8 +687,6 @@ li.nn0 h3 {
     line-height:34px;
 }
 .contct-page-butn {
-    /* background: linear-gradient(to right, #4785d1, #7c54b5);
-    color: #fff; */
     padding: 8px 25px;
     border-radius: 32px;
 }
@@ -742,17 +748,7 @@ input[type=number] {
         width: 100%;
         padding: 10px 0;
     }
-    /* #navbarSupportedContent {
-        position: fixed;
-        height: 100%;
-        background: #fff;
-        top: 0;
-        z-index: 9;
-        left: 0;
-        padding: 15px;
-        box-shadow: 3px 0px 20px -2px #0003;
-        width: 70%;
-    } */ 
+
     .catgry-box-wrap {
         grid-template-columns: repeat(auto-fill, 100%);
     }

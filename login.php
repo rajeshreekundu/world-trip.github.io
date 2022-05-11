@@ -62,6 +62,8 @@
                 <a href='signup.php'>Don't have an account? <span>Sign-up</span></a>
             </div>
         </form>
-</body>
 
+        <script src="index.js"></script>
+
+</body>
 </html>

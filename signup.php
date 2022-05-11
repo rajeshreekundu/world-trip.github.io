@@ -33,24 +33,26 @@
 
 <body>
     <div class='login-form signup-form'>
-        <form class='form-cls' id='formId' action="signup.php" method='post' >
-            <!-- <h2 class='form-heading'>Signup</h2> -->
+        <form class='form-cls' id='formId' action="signup.php" method='post' onsubmit="return formValidation()">
             <div class='frm-header-cls'>  
         <h2 class='form-heading'>Signup</h2>
             <p>Welcome to WorldTrip</p>
             </div>  
             <div class='input-area '>
-                <input type='text' name='name' placeholder='Name' id='usrNme'/>
-                <small>Error sms</small>
+                <input type='text' name='name' placeholder='Name' id='usrName'/>
+                <span id='usrname' class='error-sms'></span>
             </div>
             <div class='input-area '>
                 <input type='email' name='email' placeholder='Email' id='usrEmail'/>
+                <span id='usremail' class='error-sms'></span>
             </div>
             <div class='input-area'>
                 <input type='number' name='phone' placeholder='Phone' id='usrPhn'/>
+                <span id='usrphn' class='error-sms'></span>
             </div>
             <div class='input-area'>
                 <input type='password' name='pass' placeholder='Password' id='usrPswrd'/>
+                <span id='usrpass' class='error-sms'></span>
             </div>
             <button class='butn form-btn' type="submit">Signup</button>
 
@@ -58,50 +60,20 @@
                 <a href='login.php'>Already have an account? <span>Login</span></a>
             </div>
         </form>
+</div>
 
+<script src='index.js'></script>
+<!-- <script type='text/javascript'>
 
-        <script>
-            const form = document.getElementById('formId');
-            const usrName = document.getElementById('usrName');
-            const email = document.getElementById('usrEmail');
-            const phone = document.getElementById('usrPhn');
-            const password = document.getElementById('usrPass');
+    function formValidation(){
+    var user = document.getElementById('usrNme').value;
 
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                checkInputs();
-            });
-
-            function checkInputs() {
-                // get the value frm the input
-                const nameValue = name.value.trim();
-                const emailValue = email.value.trim();
-                const phoneValue = phone.value.trim();
-                const passwordValue = password.value.trim();
-
-                if(name.value === ''){
-                    // shw error
-                    // add error cls
-                    setErrorFor(usrName, 'Username cannot be blank');
-                }else{
-                    // add sucss
-                    setSuccessFor(usrName);
-                }
-            }
-            function setErrorFor(input, message){
-                const inputArea = input.parentElement;
-                const small = inputArea.querrySelector('small');
-
-                small.innerText = message;
-                inputArea.className = 'input-area error';
-                
-            }
-        </script>
-
-
-
-
+    if(user == ""){
+        document.getElementById('usrname').innerHTML= " * Please fill the username field";
+        return false;
+    }
+}
+</script> -->
 </body>
 
 </html>

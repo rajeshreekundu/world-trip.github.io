@@ -58,9 +58,6 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="about.php">About Us</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Destination</a>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Tour Package</a>
                 </li>
